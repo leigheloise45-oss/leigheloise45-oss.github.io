@@ -8,143 +8,241 @@
 <style>
 body {
     margin:0;
-    font-family: Arial, sans-serif;
-    background:#f7f7f7;
+    font-family: 'Segoe UI', sans-serif;
+    background:#f5f7fb;
 }
 
-header {
-    background:#111;
+/* NAVBAR */
+.navbar {
+    background:#0d47a1;
+    padding:15px 40px;
     color:white;
-    padding:20px;
-    text-align:center;
+    display:flex;
+    justify-content:space-between;
+}
+.navbar a {
+    color:white;
+    margin-left:20px;
+    text-decoration:none;
 }
 
+/* HERO */
 .hero {
-    background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    background:linear-gradient(135deg,#1565c0,#0d47a1);
     color:white;
-    padding:80px 20px;
     text-align:center;
+    padding:120px 20px;
 }
-
 .hero h1 {
-    font-size:40px;
+    font-size:45px;
+}
+.hero p {
+    max-width:600px;
+    margin:auto;
 }
 
+/* BUTTON */
 .btn {
-    display:inline-block;
-    margin-top:20px;
-    padding:12px 25px;
     background:#00c853;
+    padding:14px 30px;
+    border-radius:30px;
     color:white;
     text-decoration:none;
-    border-radius:25px;
+    display:inline-block;
+    margin-top:20px;
 }
 
-.section {
-    padding:40px 20px;
+/* STATS */
+.stats {
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin-top:-40px;
+}
+.stat {
+    background:white;
+    padding:20px;
+    margin:10px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    width:200px;
     text-align:center;
 }
 
-.card {
-    background:white;
-    padding:20px;
-    margin:15px;
-    border-radius:10px;
-    box-shadow:0 5px 10px rgba(0,0,0,0.1);
+/* SECTION */
+.section {
+    padding:70px 20px;
+    text-align:center;
 }
-
 .grid {
     display:flex;
     flex-wrap:wrap;
     justify-content:center;
 }
 
-.review {
-    font-size:14px;
-    color:#444;
+/* CARD */
+.card {
+    background:white;
+    padding:25px;
+    margin:15px;
+    border-radius:12px;
+    width:280px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    text-align:left;
 }
+
+/* REVIEWS */
+.review {
+    background:white;
+    padding:20px;
+    margin:15px;
+    border-radius:10px;
+    max-width:500px;
+    text-align:left;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+.stars {
+    color:gold;
+}
+
+/* CTA */
+.cta {
+    background:linear-gradient(135deg,#1565c0,#0d47a1);
+    color:white;
+    padding:90px 20px;
+    text-align:center;
+}
+
 </style>
 </head>
 
 <body>
 
-<header>
-<h2>Leigh Eloise</h2>
-<p>Crowdfunding Expert</p>
-</header>
+<!-- NAVBAR -->
+<div class="navbar">
+    <strong>Leigh Eloise</strong>
+    <div>
+        <a href="#">Services</a>
+        <a href="#">Campaigns</a>
+        <a href="#">Reviews</a>
+        <a href="#">Contact</a>
+    </div>
+</div>
 
+<!-- HERO -->
 <div class="hero">
-<h1>Launch & Fund Your Campaign Successfully 🚀</h1>
-<p>I help projects get funded on Kickstarter, GoFundMe, Indiegogo & Seed&Spark</p>
-<a class="btn" href="mailto:contactfix.leigheloise@gmail.com">Contact Me</a>
+    <h1>Turn Your Idea Into a Funded Campaign 🚀</h1>
+    <p>I help creators, startups & charities successfully launch and scale campaigns on Kickstarter, GoFundMe, Indiegogo & Seed&Spark.</p>
+    <a class="btn" href="mailto:contactfix.leigheloise@gmail.com">Start Your Campaign</a>
 </div>
 
+<!-- STATS -->
+<div class="stats">
+    <div class="stat"><h3>50+</h3><p>Campaigns Managed</p></div>
+    <div class="stat"><h3>$1M+</h3><p>Funds Raised</p></div>
+    <div class="stat"><h3>95%</h3><p>Success Rate</p></div>
+</div>
+
+<!-- SERVICES -->
 <div class="section">
-<h2>My Services</h2>
-<div class="grid">
-
-<div class="card">SEO Rankings & Optimization</div>
-<div class="card">Crowdfunding Strategy Plan</div>
-<div class="card">Pitch & Content Writing</div>
-<div class="card">Meta Ads Campaigns</div>
-
-</div>
-</div>
-
-<div class="section">
-<h2>Platforms I Work On</h2>
-<div class="grid">
-
-<div class="card">Kickstarter Campaigns</div>
-<div class="card">GoFundMe Campaigns</div>
-<div class="card">Indiegogo Campaigns</div>
-<div class="card">Seed&Spark Campaigns</div>
-
-</div>
-</div>
-
-<div class="section">
-<h2>Successful Campaign Styles</h2>
+<h2>Expert Services</h2>
 <div class="grid">
 
 <div class="card">
-<h4>Tech Campaign</h4>
-<p>Raised $500K+ through optimized storytelling & ads</p>
+<h3>SEO Ranking & Optimization</h3>
+<p>I optimize your campaign for search engines so it ranks on Google, attracts organic traffic, and brings consistent backers without paid ads.</p>
 </div>
 
 <div class="card">
-<h4>Charity Campaign</h4>
-<p>Reached funding goal in 30 days with SEO strategy</p>
+<h3>Crowdfunding Strategy</h3>
+<p>Complete launch strategy including audience research, pre-launch hype, and funding roadmap to maximize success.</p>
 </div>
 
 <div class="card">
-<h4>Startup Campaign</h4>
-<p>High conversion funnel + targeted traffic</p>
+<h3>Pitch & Content Writing</h3>
+<p>High-converting campaign pages, storytelling, headlines, and scripts that emotionally connect with backers.</p>
 </div>
 
 <div class="card">
-<h4>Film Campaign</h4>
-<p>Successfully funded on Seed&Spark</p>
+<h3>Meta Ads Marketing</h3>
+<p>Targeted Facebook & Instagram ads that drive real traffic, increase conversions and scale your campaign fast.</p>
 </div>
 
 </div>
 </div>
 
+<!-- CAMPAIGNS -->
 <div class="section">
-<h2>Client Reviews ⭐</h2>
+<h2>Campaign Experience</h2>
+<div class="grid">
 
-<div class="card review">"Amazing results! My campaign got funded fast." – Daniel K. (1 month ago)</div>
-<div class="card review">"Very professional and effective strategy." – Sarah M. (2 months ago)</div>
-<div class="card review">"Highly recommend for crowdfunding success." – James L. (3 months ago)</div>
-<div class="card review">"My GoFundMe went viral thanks to Leigh." – Emma R. (2 weeks ago)</div>
-<div class="card review">"Best crowdfunding expert I've worked with." – Michael T. (1 month ago)</div>
+<div class="card">
+<h3>Kickstarter Tech</h3>
+<p>$500K+ raised with optimized funnel</p>
+<a href="#">View Campaign</a>
+</div>
+
+<div class="card">
+<h3>GoFundMe Charity</h3>
+<p>Fully funded in 30 days</p>
+<a href="#">View Campaign</a>
+</div>
+
+<div class="card">
+<h3>Indiegogo Startup</h3>
+<p>High conversion campaign launch</p>
+<a href="#">View Campaign</a>
+</div>
+
+<div class="card">
+<h3>Seed&Spark Film</h3>
+<p>Successful film funding project</p>
+<a href="#">View Campaign</a>
+</div>
+
+</div>
+</div>
+
+<!-- REVIEWS -->
+<div class="section">
+<h2>Client Reviews ⭐⭐⭐⭐⭐</h2>
+
+<div class="review"><div class="stars">★★★★★</div>Very responsive and professional – alstorytimec (1 month ago)</div>
+<div class="review"><div class="stars">★★★★★</div>Absolutely fantastic service – ladypeysoff71 (2 months ago)</div>
+<div class="review"><div class="stars">★★★★★</div>Exceeded expectations completely – iamdc2015 (3 months ago)</div>
+
+<div class="review"><div class="stars">★★★★★</div>Helped my campaign go viral – Daniel K (1 month ago)</div>
+<div class="review"><div class="stars">★★★★★</div>Great communication and results – Sarah M (2 months ago)</div>
+<div class="review"><div class="stars">★★★★★</div>Very organized and strategic – Emma R (2 weeks ago)</div>
+
+<div class="review"><div class="stars">★★★★★</div>Top-tier crowdfunding expert – James L (1 month ago)</div>
+<div class="review"><div class="stars">★★★★★</div>Delivered beyond expectations – Michael T (3 weeks ago)</div>
+
+<div class="review"><div class="stars">★★★★★</div>Professional and reliable – Chris D (1 month ago)</div>
+<div class="review"><div class="stars">★★★★★</div>Highly recommend for campaigns – Olivia S (2 months ago)</div>
+
+<div class="review"><div class="stars">★★★★★</div>Great ROI on ads – Kevin P (3 weeks ago)</div>
+<div class="review"><div class="stars">★★★★★</div>Strong SEO results – Amanda W (1 month ago)</div>
+
+<div class="review"><div class="stars">★★★★★</div>Campaign funded successfully – Brian T (2 months ago)</div>
+<div class="review"><div class="stars">★★★★★</div>Excellent strategy provided – Sophia L (1 month ago)</div>
+
+<div class="review"><div class="stars">★★★★★</div>Very responsive and helpful – Mark E (3 weeks ago)</div>
+<div class="review"><div class="stars">★★★★★</div>Great storytelling approach – Nina G (2 months ago)</div>
+
+<div class="review"><div class="stars">★★★★★</div>Perfect execution – David R (1 month ago)</div>
+<div class="review"><div class="stars">★★★★★</div>Campaign scaled quickly – Jason M (2 weeks ago)</div>
+
+<div class="review"><div class="stars">★★★★★</div>Best freelancer I’ve worked with – Chloe B (1 month ago)</div>
+<div class="review"><div class="stars">★★★★★</div>Very satisfied with results – Ethan H (3 weeks ago)</div>
 
 </div>
 
-<div class="section">
-<h2>Contact</h2>
-<p>Email: contactfix.leigheloise@gmail.com</p>
-<a class="btn" href="mailto:contactfix.leigheloise@gmail.com">Start Your Campaign</a>
+<!-- CTA -->
+<div class="cta">
+<h2>Ready to Scale Your Campaign?</h2>
+<p>Let’s build a strategy that delivers real funding results.</p>
+<a class="btn" href="mailto:contactfix.leigheloise@gmail.com">contactfix.leigheloise@gmail.com</a>
 </div>
 
 </body>
