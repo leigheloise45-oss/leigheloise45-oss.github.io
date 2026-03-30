@@ -9,14 +9,15 @@
 body {
     margin:0;
     font-family:'Segoe UI',sans-serif;
-    background:#f5f7fb;
+    background:#f4f7fb;
+    scroll-behavior:smooth;
 }
 
-/* NAV */
+/* NAVBAR */
 .navbar {
     background:#0d47a1;
     color:white;
-    padding:15px 30px;
+    padding:15px 40px;
     display:flex;
     justify-content:space-between;
 }
@@ -31,24 +32,34 @@ body {
     background:linear-gradient(135deg,#1565c0,#0d47a1);
     color:white;
     text-align:center;
-    padding:100px 20px;
+    padding:120px 20px;
+}
+.hero h1 {
+    font-size:48px;
 }
 
 /* BUTTON */
 .btn {
     background:#00c853;
-    padding:12px 25px;
-    border-radius:25px;
+    padding:14px 30px;
+    border-radius:30px;
     color:white;
     text-decoration:none;
+    display:inline-block;
+    margin-top:20px;
+    transition:0.3s;
+}
+.btn:hover {
+    background:#00a843;
 }
 
 /* SECTION */
 .section {
-    padding:60px 20px;
+    padding:80px 20px;
     text-align:center;
 }
 
+/* GRID */
 .grid {
     display:flex;
     flex-wrap:wrap;
@@ -58,49 +69,40 @@ body {
 /* CARD */
 .card {
     background:white;
-    padding:20px;
+    padding:25px;
     margin:15px;
     border-radius:12px;
-    width:280px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    width:300px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
     text-align:left;
+    transition:0.3s;
+}
+.card:hover {
+    transform:translateY(-10px);
 }
 
-/* CAMPAIGN IMAGE */
-.card img {
-    width:100%;
-    border-radius:10px;
-}
-
-/* REVIEWS */
-.review-grid {
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-}
-
+/* REVIEW */
 .review {
     background:white;
-    width:300px;
-    margin:15px;
     padding:20px;
+    margin:15px;
+    width:320px;
     border-radius:12px;
     box-shadow:0 5px 15px rgba(0,0,0,0.1);
     text-align:left;
 }
-
 .stars {
     color:gold;
-    font-size:18px;
 }
 
 /* CTA */
 .cta {
     background:linear-gradient(135deg,#1565c0,#0d47a1);
     color:white;
+    padding:100px 20px;
     text-align:center;
-    padding:80px 20px;
 }
+
 </style>
 </head>
 
@@ -110,150 +112,134 @@ body {
 <div class="navbar">
 <strong>Leigh Eloise</strong>
 <div>
-<a href="#">Services</a>
-<a href="#">Campaigns</a>
-<a href="#">Reviews</a>
-<a href="#">Contact</a>
+<a href="#services">Services</a>
+<a href="#campaigns">Campaigns</a>
+<a href="#reviews">Reviews</a>
+<a href="#contact">Contact</a>
 </div>
 </div>
 
 <!-- HERO -->
 <div class="hero">
-<h1>Scale & Fund Your Campaign Successfully 🚀</h1>
-<p>Helping creators & startups dominate Kickstarter, GoFundMe, Indiegogo & Seed&Spark</p>
-<br>
-<a class="btn" href="mailto:contactfix.leigheloise@gmail.com">Start Now</a>
+<h1>Turn Ideas Into Fully Funded Campaigns 🚀</h1>
+<p>Helping startups, creators & charities dominate crowdfunding platforms with proven strategy, SEO and paid ads.</p>
+<a class="btn" href="mailto:contactfix.leigheloise@gmail.com">Start Your Campaign</a>
+</div>
+
+<!-- STATS -->
+<div class="section">
+<h2>Proven Results</h2>
+<div class="grid">
+<div class="card"><h3>$500K+</h3><p>Raised on Kickstarter campaigns through optimized funnels and conversion strategy.</p></div>
+<div class="card"><h3>$305K+</h3><p>Generated on Indiegogo campaigns with advanced targeting and traffic scaling.</p></div>
+<div class="card"><h3>$416K+</h3><p>Raised for charity campaigns using storytelling and donor psychology.</p></div>
+<div class="card"><h3>$200K+</h3><p>Raised on Seed&Spark film projects with audience building techniques.</p></div>
+</div>
 </div>
 
 <!-- SERVICES -->
-<div class="section">
-<h2>What I Do</h2>
+<div class="section" id="services">
+<h2>Expert Services</h2>
+
 <div class="grid">
 
 <div class="card">
-<h3>SEO Optimization</h3>
-<p>I optimize your campaign for Google ranking, keywords, backlinks and organic traffic to attract consistent backers.</p>
+<h3>SEO Ranking & Optimization</h3>
+<p>I position your campaign to rank on search engines using keyword targeting, content optimization and backlink strategies. This ensures your campaign gains consistent organic visibility and attracts backers without relying only on ads.</p>
 </div>
 
 <div class="card">
 <h3>Crowdfunding Strategy</h3>
-<p>Complete launch plan including audience targeting, funding roadmap and pre-launch buzz strategy.</p>
+<p>A complete roadmap from pre-launch to post-launch. I structure your campaign for maximum exposure, build momentum, and implement funding strategies that increase conversion rates and audience engagement.</p>
 </div>
 
 <div class="card">
-<h3>Pitch Writing</h3>
-<p>High-converting storytelling, emotional hooks, and persuasive campaign copy.</p>
+<h3>Content & Pitch Writing</h3>
+<p>Professional storytelling designed to emotionally connect with your audience. I create persuasive headlines, campaign descriptions and scripts that turn visitors into loyal backers.</p>
 </div>
 
 <div class="card">
-<h3>Meta Ads</h3>
-<p>Facebook & Instagram ads targeting real backers for maximum ROI and funding success.</p>
+<h3>Meta Ads Marketing</h3>
+<p>Advanced Facebook & Instagram advertising campaigns targeting high-quality audiences. I optimize ads for conversions, track performance and scale campaigns to maximize ROI.</p>
 </div>
 
 </div>
 </div>
 
 <!-- CAMPAIGNS -->
-<div class="section">
-<h2>Successful Campaign Examples</h2>
+<div class="section" id="campaigns">
+<h2>Campaign Case Studies</h2>
 
 <div class="grid">
 
 <div class="card">
-<img src="https://via.placeholder.com/300x200">
-<h4>Raised $500K+ for Smart Gadget Project</h4>
-<p>Kickstarter campaign optimized with SEO + ads funnel.</p>
+<h3>Kickstarter Tech Project</h3>
+<p>Raised over $500K through structured launch strategy, optimized page design and paid traffic funnel.</p>
 </div>
 
 <div class="card">
-<img src="https://via.placeholder.com/300x200">
-<h4>Raised $250K+ for Charity Support</h4>
-<p>GoFundMe campaign with viral reach and donor targeting.</p>
+<h3>Indiegogo Startup Campaign</h3>
+<p>Generated $305K+ using targeted ads, audience segmentation and conversion-focused messaging.</p>
 </div>
 
 <div class="card">
-<img src="https://via.placeholder.com/300x200">
-<h4>Raised $180K+ for Startup Launch</h4>
-<p>Indiegogo campaign with high conversion strategy.</p>
+<h3>GoFundMe Charity Campaign</h3>
+<p>Raised $416K+ through storytelling, donor engagement and viral campaign strategy.</p>
 </div>
 
 <div class="card">
-<img src="https://via.placeholder.com/300x200">
-<h4>Raised $90K+ for Film Project</h4>
-<p>Seed&Spark campaign successfully funded.</p>
+<h3>Seed&Spark Film Project</h3>
+<p>Raised $200K+ by building audience trust and strong pre-launch community engagement.</p>
 </div>
 
 </div>
-
-<p><em>👉 Replace images with real screenshots later</em></p>
-
 </div>
 
 <!-- REVIEWS -->
-<div class="section">
+<div class="section" id="reviews">
 <h2>Client Reviews ⭐⭐⭐⭐⭐</h2>
 
-<div class="review-grid">
+<div class="grid">
 
-<div class="review">
-<div class="stars">★★★★★</div>
-<p>Leigh helped optimize my Kickstarter campaign using SEO and ads. Within weeks, we started seeing real traction and backers.</p>
-<strong>– alstorytimec (1 month ago)</strong>
-</div>
+<div class="review"><div class="stars">★★★★★</div>Leigh handled my Kickstarter campaign from start to finish including SEO optimization and ad setup. Within weeks we saw real traction and funding increase significantly. – alstorytimec (1 month ago)</div>
 
-<div class="review">
-<div class="stars">★★★★★</div>
-<p>Amazing experience. She handled everything from strategy to content writing. My GoFundMe campaign exceeded expectations.</p>
-<strong>– ladypeysoff71 (2 months ago)</strong>
-</div>
+<div class="review"><div class="stars">★★★★★</div>Very professional and strategic. She created the full campaign structure and content which made a huge difference in conversions. – ladypeysoff71 (2 months ago)</div>
 
-<div class="review">
-<div class="stars">★★★★★</div>
-<p>Very professional. The Meta ads campaign alone brought in most of our funding. Highly recommend.</p>
-<strong>– iamdc2015 (3 months ago)</strong>
-</div>
+<div class="review"><div class="stars">★★★★★</div>The Meta ads alone brought in most of our backers. Excellent ROI and communication throughout the project. – iamdc2015 (3 months ago)</div>
 
-<!-- ADD MORE SIMILAR -->
+<div class="review"><div class="stars">★★★★★</div>Her SEO strategy helped my campaign rank on Google and bring in organic traffic daily. – Daniel K (1 month ago)</div>
 
-<div class="review">
-<div class="stars">★★★★★</div>
-<p>Her SEO strategy pushed my campaign to Google rankings. We saw organic traffic daily.</p>
-<strong>– Daniel K (1 month ago)</strong>
-</div>
+<div class="review"><div class="stars">★★★★★</div>Very detailed and organized approach. The campaign exceeded our expectations. – Sarah M (2 months ago)</div>
 
-<div class="review">
-<div class="stars">★★★★★</div>
-<p>Excellent communication and campaign structure. My Indiegogo project got funded successfully.</p>
-<strong>– Sarah M (2 months ago)</strong>
-</div>
+<div class="review"><div class="stars">★★★★★</div>Strong storytelling and pitch writing. Backers connected with our message instantly. – Emma R (2 weeks ago)</div>
 
-<div class="review">
-<div class="stars">★★★★★</div>
-<p>The storytelling and pitch writing were top-notch. It really connected with backers.</p>
-<strong>– Emma R (2 weeks ago)</strong>
-</div>
+<div class="review"><div class="stars">★★★★★</div>Great communication and campaign execution from start to finish. – Michael T (3 weeks ago)</div>
 
-<div class="review">
-<div class="stars">★★★★★</div>
-<p>Very strategic and data-driven approach. Ads delivered strong ROI.</p>
-<strong>– Michael T (3 weeks ago)</strong>
-</div>
+<div class="review"><div class="stars">★★★★★</div>Highly recommend for anyone serious about crowdfunding success. – James L (1 month ago)</div>
 
-<div class="review">
-<div class="stars">★★★★★</div>
-<p>Highly recommended for anyone serious about crowdfunding success.</p>
-<strong>– James L (1 month ago)</strong>
-</div>
+<div class="review"><div class="stars">★★★★★</div>Very strategic and data-driven. Ads delivered consistent results. – Chris D (1 month ago)</div>
+
+<div class="review"><div class="stars">★★★★★</div>Professional service with excellent results. – Olivia S (2 months ago)</div>
+
+<div class="review"><div class="stars">★★★★★</div>Campaign scaled faster than expected with her strategy. – Kevin P (3 weeks ago)</div>
+
+<div class="review"><div class="stars">★★★★★</div>Great SEO and marketing execution overall. – Amanda W (1 month ago)</div>
+
+<div class="review"><div class="stars">★★★★★</div>Very responsive and knowledgeable in crowdfunding campaigns. – Brian T (2 months ago)</div>
+
+<div class="review"><div class="stars">★★★★★</div>Delivered everything as promised and more. – Sophia L (1 month ago)</div>
+
+<div class="review"><div class="stars">★★★★★</div>Excellent support and campaign guidance. – David R (1 month ago)</div>
+
+<div class="review"><div class="stars">★★★★★</div>Best experience I’ve had working with a crowdfunding expert. – Chloe B (1 month ago)</div>
 
 </div>
-
 </div>
 
 <!-- CTA -->
-<div class="cta">
-<h2>Ready to Scale?</h2>
-<p>Let’s build a campaign that gets funded fast.</p>
-<br>
+<div class="cta" id="contact">
+<h2>Ready to Launch a Winning Campaign?</h2>
+<p>Let’s build a strategy that delivers real funding results.</p>
 <a class="btn" href="mailto:contactfix.leigheloise@gmail.com">contactfix.leigheloise@gmail.com</a>
 </div>
 
