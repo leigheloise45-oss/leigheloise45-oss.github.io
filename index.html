@@ -3,244 +3,148 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Leigh Eloise | Crowdfunding Expert</title>
+<title>Leigh | Crowdfunding Expert</title>
 
 <style>
 body {
-    margin:0;
-    font-family:'Segoe UI',sans-serif;
-    background:#f4f7fb;
-    scroll-behavior:smooth;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f5f7fa;
+  color: #333;
 }
 
-/* NAVBAR */
-.navbar {
-    background:#0d47a1;
-    color:white;
-    padding:15px 40px;
-    display:flex;
-    justify-content:space-between;
-}
-.navbar a {
-    color:white;
-    margin-left:20px;
-    text-decoration:none;
+header {
+  background: #0a2540;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
 }
 
-/* HERO */
-.hero {
-    background:linear-gradient(135deg,#1565c0,#0d47a1);
-    color:white;
-    text-align:center;
-    padding:120px 20px;
-}
-.hero h1 {
-    font-size:48px;
+header h1 {
+  margin: 0;
+  font-size: 32px;
 }
 
-/* BUTTON */
-.btn {
-    background:#00c853;
-    padding:14px 30px;
-    border-radius:30px;
-    color:white;
-    text-decoration:none;
-    display:inline-block;
-    margin-top:20px;
-    transition:0.3s;
-}
-.btn:hover {
-    background:#00a843;
+header p {
+  margin-top: 10px;
+  font-size: 16px;
+  opacity: 0.9;
 }
 
-/* SECTION */
-.section {
-    padding:80px 20px;
-    text-align:center;
+section {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
 }
 
-/* GRID */
-.grid {
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
+h2 {
+  color: #0a2540;
+  margin-bottom: 20px;
 }
 
-/* CARD (UPGRADED) */
-.card {
-    background:white;
-    padding:30px;
-    margin:15px;
-    border-radius:16px;
-    width:300px;
-    box-shadow:0 10px 30px rgba(0,0,0,0.08);
-    text-align:left;
-    transition:0.3s;
-    border-top:4px solid #1565c0;
-}
-.card:hover {
-    transform:translateY(-8px);
-    box-shadow:0 15px 40px rgba(0,0,0,0.12);
-}
-.card h3 {
-    color:#0d47a1;
+/* About */
+.about {
+  background: white;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 }
 
-/* REVIEW */
-.review {
-    background:white;
-    padding:20px;
-    margin:15px;
-    width:320px;
-    border-radius:12px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.1);
-    text-align:left;
-}
-.stars {
-    color:gold;
+/* Reviews */
+.reviews {
+  display: grid;
+  gap: 20px;
 }
 
-/* CTA */
-.cta {
-    background:linear-gradient(135deg,#1565c0,#0d47a1);
-    color:white;
-    padding:100px 20px;
-    text-align:center;
+.review-img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-/* WHATSAPP BUTTON */
-.whatsapp {
-    position:fixed;
-    bottom:20px;
-    right:20px;
-    background:#25D366;
-    color:white;
-    padding:15px 20px;
-    border-radius:50px;
-    text-decoration:none;
-    font-weight:bold;
-    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+/* Contact */
+.contact {
+  background: #0a2540;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  padding: 30px;
 }
-.whatsapp:hover {
-    background:#1ebe5d;
+
+.contact a {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 20px;
+  background: #00c896;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.contact a:hover {
+  background: #00a67d;
 }
 </style>
 </head>
 
 <body>
 
-<!-- NAV -->
-<div class="navbar">
-<strong>Leigh Eloise</strong>
-<div>
-<a href="#services">Services</a>
-<a href="#campaigns">Campaigns</a>
-<a href="#reviews">Reviews</a>
-<a href="#contact">Contact</a>
-</div>
-</div>
+<header>
+  <h1>Leigh</h1>
+  <p>Crowdfunding Expert | Campaign Growth Strategist</p>
+</header>
 
-<!-- HERO -->
-<div class="hero">
-<h1>Turn Ideas Into Fully Funded Campaigns 🚀</h1>
-<p>Helping startups, creators & charities dominate crowdfunding platforms with proven strategy, SEO and paid ads.</p>
-<a class="btn" href="mailto:contactfix.leigheloise@gmail.com">Start via Email</a>
-</div>
+<section>
+  <h2>About Me</h2>
+  <div class="about">
+    <p>
+      I'm Leigh, a professional crowdfunding expert who helps creators, startups, and businesses
+      successfully launch and scale their campaigns.
+    </p>
 
-<!-- ABOUT -->
-<div class="section">
-<h2>Meet Leigh Eloise</h2>
-<div style="max-width:800px;margin:auto;text-align:left;line-height:1.7;">
-<p>Leigh Eloise is a crowdfunding strategist helping startups, creators, and charities launch and scale high-performing campaigns.</p>
-<p>Using a combination of SEO, paid advertising, and conversion-focused storytelling, she has helped campaigns generate strong traction and significant funding across major platforms.</p>
-<p>Her approach focuses on building pre-launch momentum, optimizing campaign pages, and scaling visibility through targeted traffic strategies.</p>
-<p>The result is simple — campaigns that gain real traction, attract backers, and reach their funding goals.</p>
-</div>
-</div>
+    <p>
+      I specialize in campaign strategy, audience targeting, email marketing, and high-conversion
+      promotion systems that bring real traction and funding results.
+    </p>
 
-<!-- HOW IT WORKS -->
-<div class="section">
-<h2>How It Works</h2>
-<div class="grid">
-<div class="card"><h3>1. Campaign Audit</h3><p>We analyze your idea and identify growth opportunities.</p></div>
-<div class="card"><h3>2. Strategy & Setup</h3><p>We structure your campaign for visibility and conversions.</p></div>
-<div class="card"><h3>3. Launch & Scale</h3><p>We drive traffic and scale your campaign for results.</p></div>
-</div>
-</div>
+    <p>
+      Over time, I’ve helped multiple campaigns gain visibility, attract backers, and achieve
+      outstanding performance through structured and data-driven promotion.
+    </p>
 
-<!-- STATS -->
-<div class="section">
-<h2>Proven Results</h2>
-<div class="grid">
-<div class="card"><h3>$500K+</h3><p>Raised on Kickstarter campaigns.</p></div>
-<div class="card"><h3>$305K+</h3><p>Generated on Indiegogo campaigns.</p></div>
-<div class="card"><h3>$416K+</h3><p>Raised for charity campaigns.</p></div>
-<div class="card"><h3>$200K+</h3><p>Raised on Seed&Spark film projects.</p></div>
-</div>
-</div>
+    <p>
+      My goal is simple — to turn your idea into a successful, funded campaign.
+    </p>
+  </div>
+</section>
 
-<!-- SERVICES -->
-<div class="section" id="services">
-<h2>Expert Services</h2>
-<div class="grid">
+<section>
+  <h2>Client Reviews</h2>
 
-<div class="card"><h3>SEO Ranking & Optimization</h3><p>Rank your campaign on search engines and gain organic traffic.</p></div>
+  <div class="reviews">
 
-<div class="card"><h3>Crowdfunding Strategy</h3><p>Full roadmap from pre-launch to post-launch success.</p></div>
+    <!-- Upload your screenshot images in same folder -->
+    <img src="review1.jpg" class="review-img">
+    <img src="review2.jpg" class="review-img">
+    <img src="review3.jpg" class="review-img">
+    <img src="review4.jpg" class="review-img">
+    <img src="review5.jpg" class="review-img">
 
-<div class="card"><h3>Content & Pitch Writing</h3><p>Persuasive storytelling that converts visitors into backers.</p></div>
+  </div>
+</section>
 
-<div class="card"><h3>Meta Ads Marketing</h3><p>Targeted advertising campaigns optimized for ROI.</p></div>
+<section>
+  <h2>Get In Touch</h2>
+  <div class="contact">
+    <p>Reach out to discuss your project</p>
 
-</div>
-</div>
+    <!-- Replace with your real links -->
+    <a href="mailto:your@email.com">Email Me</a>
+    <a href="https://wa.me/yournumber">WhatsApp Chat</a>
 
-<!-- CAMPAIGNS -->
-<div class="section" id="campaigns">
-<h2>Campaign Case Studies</h2>
-<div class="grid">
-
-<div class="card"><h3>Kickstarter Tech Project</h3><p>Raised over $500K with structured launch strategy.</p></div>
-
-<div class="card"><h3>Indiegogo Startup Campaign</h3><p>Generated $305K+ using targeted ads.</p></div>
-
-<div class="card"><h3>GoFundMe Charity Campaign</h3><p>Raised $416K+ through storytelling strategy.</p></div>
-
-<div class="card"><h3>Seed&Spark Film Project</h3><p>Raised $200K+ with strong audience building.</p></div>
-
-</div>
-</div>
-
-<!-- REVIEWS (UNCHANGED) -->
-<div class="section" id="reviews">
-<h2>Client Reviews ⭐⭐⭐⭐⭐</h2>
-<div class="grid">
-
-<div class="review"><div class="stars">★★★★★</div>Leigh handled my Kickstarter campaign... – alstorytimec</div>
-<div class="review"><div class="stars">★★★★★</div>Very professional and strategic... – ladypeysoff71</div>
-<div class="review"><div class="stars">★★★★★</div>The Meta ads alone brought in... – iamdc2015</div>
-<div class="review"><div class="stars">★★★★★</div>Her SEO strategy helped... – Daniel K</div>
-<div class="review"><div class="stars">★★★★★</div>Very detailed and organized... – Sarah M</div>
-<div class="review"><div class="stars">★★★★★</div>Strong storytelling... – Emma R</div>
-<div class="review"><div class="stars">★★★★★</div>Great communication... – Michael T</div>
-<div class="review"><div class="stars">★★★★★</div>Highly recommend... – James L</div>
-<div class="review"><div class="stars">★★★★★</div>Very strategic... – Chris D</div>
-<div class="review"><div class="stars">★★★★★</div>Professional service... – Olivia S</div>
-
-</div>
-</div>
-
-<!-- CTA -->
-<div class="cta" id="contact">
-<h2>Ready to Launch a Winning Campaign?</h2>
-<p>Let’s build a strategy that delivers real funding results.</p>
-<a class="btn" href="mailto:contactfix.leigheloise@gmail.com">Contact via Email</a>
-</div>
-
-<!-- WHATSAPP -->
-<a href="https://wa.me/message/53RSNNV4FEYBM1" target="_blank" class="whatsapp">
-💬 WhatsApp
-</a>
+  </div>
+</section>
 
 </body>
 </html>
