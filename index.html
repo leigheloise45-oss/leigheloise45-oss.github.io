@@ -3,148 +3,183 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Leigh | Crowdfunding Expert</title>
+<title>Leigh Eloise | Crowdfunding Expert</title>
 
 <style>
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background: #f5f7fa;
-  color: #333;
+    margin:0;
+    font-family:'Segoe UI',sans-serif;
+    background:#f5f7fb;
 }
 
-header {
-  background: #0a2540;
-  color: white;
-  padding: 40px 20px;
-  text-align: center;
+/* NAV */
+.navbar {
+    background:white;
+    padding:15px 40px;
+    display:flex;
+    justify-content:space-between;
+    box-shadow:0 2px 10px rgba(0,0,0,0.05);
+}
+.navbar a {
+    text-decoration:none;
+    margin-left:20px;
+    color:#333;
+    font-weight:500;
 }
 
-header h1 {
-  margin: 0;
-  font-size: 32px;
+/* HERO */
+.hero {
+    text-align:center;
+    padding:100px 20px;
+    background:linear-gradient(135deg,#1565c0,#0d47a1);
+    color:white;
+}
+.hero h1 {
+    font-size:42px;
+}
+.hero p {
+    max-width:600px;
+    margin:auto;
 }
 
-header p {
-  margin-top: 10px;
-  font-size: 16px;
-  opacity: 0.9;
+/* BUTTON */
+.btn {
+    background:#00c853;
+    padding:14px 30px;
+    border-radius:30px;
+    color:white;
+    text-decoration:none;
+    display:inline-block;
+    margin-top:20px;
 }
 
-section {
-  padding: 40px 20px;
-  max-width: 1000px;
-  margin: auto;
+/* SECTION */
+.section {
+    padding:70px 20px;
+    text-align:center;
+}
+.container {
+    max-width:1000px;
+    margin:auto;
 }
 
-h2 {
-  color: #0a2540;
-  margin-bottom: 20px;
+/* CARDS */
+.grid {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+.card {
+    background:white;
+    padding:25px;
+    margin:15px;
+    border-radius:12px;
+    width:280px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
 }
 
-/* About */
+/* ABOUT */
 .about {
-  background: white;
-  border-radius: 10px;
-  padding: 25px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    text-align:left;
+    max-width:700px;
+    margin:auto;
+    line-height:1.7;
 }
 
-/* Reviews */
-.reviews {
-  display: grid;
-  gap: 20px;
+/* CTA */
+.cta {
+    background:#0d47a1;
+    color:white;
+    padding:80px 20px;
 }
 
-.review-img {
-  width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-/* Contact */
-.contact {
-  background: #0a2540;
-  color: white;
-  text-align: center;
-  border-radius: 10px;
-  padding: 30px;
-}
-
-.contact a {
-  display: inline-block;
-  margin: 10px;
-  padding: 12px 20px;
-  background: #00c896;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-}
-
-.contact a:hover {
-  background: #00a67d;
+/* WHATSAPP */
+.whatsapp {
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:white;
+    padding:15px 18px;
+    border-radius:50px;
+    text-decoration:none;
 }
 </style>
 </head>
 
 <body>
 
-<header>
-  <h1>Leigh</h1>
-  <p>Crowdfunding Expert | Campaign Growth Strategist</p>
-</header>
+<!-- NAV -->
+<div class="navbar">
+<strong>Leigh Eloise</strong>
+<div>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#contact">Contact</a>
+</div>
+</div>
 
-<section>
-  <h2>About Me</h2>
-  <div class="about">
-    <p>
-      I'm Leigh, a professional crowdfunding expert who helps creators, startups, and businesses
-      successfully launch and scale their campaigns.
-    </p>
+<!-- HERO -->
+<div class="hero">
+<h1>Turn Ideas Into Fully Funded Campaigns 🚀</h1>
+<p>Helping startups, creators & charities grow, gain traction, and achieve real crowdfunding success.</p>
+<a href="mailto:contactfix.leigheloise@gmail.com" class="btn">Start via Email</a>
+</div>
 
-    <p>
-    I specialize in campaign strategy, audience targeting, email marketing, and high-conversion
-      promotion systems that bring real traction and funding results.
-    </p>
+<!-- ABOUT -->
+<div class="section" id="about">
+<h2>About Leigh</h2>
+<div class="about">
+<p>My name is Leigh, and I’m a crowdfunding expert focused on helping campaigns gain visibility, traction, and real funding results.</p>
 
-    <p>
-      Over time, I’ve helped multiple campaigns gain visibility, attract backers, and achieve
-      outstanding performance through structured and data-driven promotion.
-    </p>
+<p>I work across platforms including Seed&Spark, Kickstarter, GoFundMe, and Indiegogo, using a combination of SEO, paid advertising, and conversion-focused storytelling to help campaigns stand out and exceed their funding goals.</p>
 
-    <p>
-      My goal is simple — to turn your idea into a successful, funded campaign.
-    </p>
-  </div>
-</section>
+<p>My approach is simple but highly effective — I build strong foundations, connect you with the right audience, and scale campaigns using proven growth strategies that deliver real, measurable results.</p>
+</div>
 
-<section>
-  <h2>Client Reviews</h2>
+<!-- SERVICES -->
+<div class="section" id="services">
+<h2>Services</h2>
+<div class="grid">
 
-  <div class="reviews">
+<div class="card">
+<h3>Campaign Strategy</h3>
+<p>Full roadmap to structure your campaign for maximum visibility and funding success.</p>
+</div>
 
-    <!-- Upload your screenshot images in same folder -->
-    <img src="review1.jpg" class="review-img">
-    <img src="review2.jpg" class="review-img">
-    <img src="review3.jpg" class="review-img">
-    <img src="review4.jpg" class="review-img">
-    <img src="review5.jpg" class="review-img">
+<div class="card">
+<h3>SEO Optimization</h3>
+<p>Rank your campaign on search engines and attract consistent organic traffic.</p>
+</div>
 
-  </div>
-</section>
+<div class="card">
+<h3>Content & Pitch</h3>
+<p>High-converting storytelling that turns visitors into backers.</p>
+</div>
 
-<section>
-  <h2>Get In Touch</h2>
-  <div class="contact">
-    <p>Reach out to discuss your project</p>
+<div class="card">
+<h3>Paid Ads</h3>
+<p>Targeted advertising campaigns designed to scale results and ROI.</p>
+</div>
 
-    <!-- Replace with your real links -->
-    <a href="mailto:your@email.com">Email Me</a>
-    <a href="https://wa.me/yournumber">WhatsApp Chat</a>
+</div>
+</div>
 
-  </div>
-</section>
+<!-- CTA -->
+<div class="cta" id="contact">
+<h2>Ready to Grow Your Campaign?</h2>
+<p>Reach out and start building real traction today.</p>
+
+<a href="mailto:contactfix.leigheloise@gmail.com" class="btn">Email Now</a>
+<br><br>
+<a href="https://wa.me/message/53RSNNV4FEYBM1" class="btn">Chat on WhatsApp</a>
+
+</div>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/message/53RSNNV4FEYBM1" target="_blank" class="whatsapp">
+💬
+</a>
 
 </body>
 </html>
